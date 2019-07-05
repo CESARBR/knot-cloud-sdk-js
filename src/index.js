@@ -1,4 +1,4 @@
 import Client from './Client';
+import Authenticator from './Authenticator';
 
-// eslint-disable-next-line import/prefer-default-export
-export { Client };
+export { Client, Authenticator };
