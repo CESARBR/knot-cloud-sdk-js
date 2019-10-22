@@ -1,3 +1,10 @@
+ # [1.2.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v1.1.0...v1.2.0)
+
+## Features
+
+- Add support to [WebSocket Client v1.1.3](https://github.com/CESARBR/knot-cloud-websocket/releases/tag/v1.1.3)
+- Add support to [Storage v1.0.2](https://github.com/CESARBR/knot-cloud-sdk-js-storage/releases/tag/v1.0.2)
+
  # [1.1.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v1.0.0...v1.1.0)
 
 ## Features
