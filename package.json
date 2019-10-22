@@ -1,6 +1,6 @@
 {
 	"name": "@cesarbr/knot-cloud-sdk-js",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"description": "KNoT Cloud SDK for NodeJS and browser",
 	"main": "./dist/main.js",
 	"module": "./dist/module.mjs",
