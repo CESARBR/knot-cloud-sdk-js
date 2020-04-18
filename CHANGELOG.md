@@ -1,4 +1,12 @@
- # [1.2.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v1.1.0...v1.2.0)
+# [2.0.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v1.2.0...v2.0.0)
+
+## Features
+
+- Add support to [AMQP Client v1.0.0](https://github.com/CESARBR/knot-cloud-sdk-js-amqp/releases/tag/v1.0.0)
+- Add support to [Authenticator v2.0.0](https://github.com/CESARBR/knot-cloud-sdk-js-authenticator/releases/tag/v2.0.0)
+
+
+# [1.2.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v1.1.0...v1.2.0)
 
 ## Features
 
