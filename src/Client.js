@@ -1,15 +1,15 @@
-import KNoTCloudWebsocket from '@cesarbr/knot-cloud-websocket';
+import KNoTCloudAMQP from '@cesarbr/knot-cloud-sdk-js-amqp';
 
 class Client {}
 
 const clientHandler = {
   construct(target, args) {
     const properties = args[0];
-    if (properties.protocol !== 'ws' && properties.protocol !== 'wss') {
+    if (properties.protocol !== 'amqp' && properties.protocol !== 'amqps') {
       throw new Error('Unsupported client protocol');
     }
 
-    return new KNoTCloudWebsocket(properties);
+    return new KNoTCloudAMQP(properties);
   },
 };
 
