@@ -1,3 +1,9 @@
+# [2.1.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v2.0.0...v2.1.0)
+
+## Features
+
+- Add support to [Authenticator v2.0.1](https://github.com/CESARBR/knot-cloud-sdk-js-authenticator/releases/tag/v2.0.1)
+
 # [2.0.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v1.2.0...v2.0.0)
 
 ## Features
