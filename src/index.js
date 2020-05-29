@@ -1,8 +1,8 @@
-import AMQP from './network/AMQP';
+import { AMQP, HTTP } from './network';
 import * as api from './config/api';
 import KNoTClient from './Client';
 import Storage from './Storage';
-import Authenticator from './Authenticator';
+import KNoTAuthenticator from './Authenticator';
 
 class Client extends KNoTClient {
   constructor(config = {}) {
@@ -18,6 +18,17 @@ class Client extends KNoTClient {
       ...config,
     });
     super(config.token, amqp, api);
+  }
+}
+
+class Authenticator extends KNoTAuthenticator {
+  constructor(config = {}) {
+    const http = new HTTP({
+      protocol: 'https',
+      hostname: 'api.knot.cloud',
+      ...config,
+    });
+    super(http);
   }
 }
 
