@@ -15,17 +15,33 @@ export default class HTTP {
     }
 
     this.baseUrl = `${protocol}://${hostname}:${port}${pathname}`;
-    this.header = {
-      auth_token: token,
-    };
+    this.authToken = token;
   }
 
   async get(path, params) {
     const config = {
       url: `${this.baseUrl}${path}`,
       method: 'GET',
-      headers: this.header,
+      headers: {
+        auth_token: this.authToken,
+      },
       params,
+    };
+
+    return axios(config)
+      .then(res => res.data || JSON.parse(res.config.data))
+      .catch(err => this.handleError(err));
+  }
+
+  async post(path, data) {
+    const config = {
+      url: `${this.baseUrl}${path}`,
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      data,
     };
 
     return axios(config)

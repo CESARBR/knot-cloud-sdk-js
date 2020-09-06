@@ -54,7 +54,6 @@
 		"rollup-plugin-node-resolve": "^5.2.0"
 	},
 	"dependencies": {
-		"@cesarbr/knot-cloud-sdk-js-authenticator": "^2.1.1",
 		"amqp-connection-manager": "^3.2.0",
 		"amqplib": "^0.5.6",
 		"axios": "^0.19.2",
