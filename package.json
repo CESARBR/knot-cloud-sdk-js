@@ -30,12 +30,19 @@
 		"@babel/core": "^7.9.0",
 		"@babel/node": "^7.8.7",
 		"@babel/preset-env": "^7.9.5",
+		"@rollup/plugin-json": "^4.1.0",
+		"babel-jest": "^26.1.0",
 		"babel-plugin-module-resolver": "^3.2.0",
 		"eslint": "^6.8.0",
 		"eslint-config-airbnb-base": "^13.2.0",
+		"eslint-config-prettier": "^6.11.0",
 		"eslint-import-resolver-babel-module": "^5.1.2",
 		"eslint-plugin-import": "^2.20.2",
-		"pre-commit": "^1.2.2",
+		"eslint-plugin-jest": "^23.18.0",
+		"husky": ">=4",
+		"jest": "^26.1.0",
+		"lint-staged": ">=10",
+		"prettier": "^2.0.5",
 		"rollup": "^1.32.1",
 		"rollup-plugin-auto-external": "^2.0.0",
 		"rollup-plugin-babel": "^4.4.0",
@@ -44,13 +51,18 @@
 		"rollup-plugin-node-globals": "^1.4.0",
 		"rollup-plugin-node-resolve": "^5.2.0"
 	},
-	"pre-commit": [
-		"lint"
-	],
 	"dependencies": {
 		"@cesarbr/knot-cloud-sdk-js-amqp": "^2.1.0",
 		"@cesarbr/knot-cloud-sdk-js-authenticator": "^2.1.1",
-		"@cesarbr/knot-cloud-sdk-js-storage": "^1.0.3",
-		"@rollup/plugin-json": "^4.0.2"
+		"@cesarbr/knot-cloud-sdk-js-storage": "^1.0.3"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": "eslint --cache --fix",
+		"*.{js,css,md}": "prettier --write"
 	}
 }

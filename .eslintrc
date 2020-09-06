@@ -1,5 +1,9 @@
 {
-  "extends": ["airbnb-base"],
+  "env": {
+    "jest/globals": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "plugins": ["jest"],
   "rules": {
     "class-methods-use-this": "off"
   },
