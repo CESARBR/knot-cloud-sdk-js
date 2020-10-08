@@ -1,3 +1,9 @@
+# [3.2.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v3.1.0...v3.2.0)
+
+## Features
+
+- Add support to [AMQP Client v3.0.0](https://github.com/CESARBR/knot-cloud-sdk-js-amqp/releases/tag/v3.0.0)
+
 # [3.1.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v3.0.0...v3.1.0)
 
 ## Features
