@@ -1,6 +1,6 @@
 {
 	"name": "@cesarbr/knot-cloud-sdk-js",
-	"version": "3.2.0",
+	"version": "3.2.1",
 	"description": "KNoT Cloud SDK for NodeJS and browser",
 	"main": "./dist/main.js",
 	"module": "./dist/module.mjs",
@@ -48,9 +48,9 @@
 		"lint"
 	],
 	"dependencies": {
-		"@cesarbr/knot-cloud-sdk-js-amqp": "^3.0.0",
-		"@cesarbr/knot-cloud-sdk-js-authenticator": "^2.1.1",
-		"@cesarbr/knot-cloud-sdk-js-storage": "^1.0.3",
+		"@cesarbr/knot-cloud-sdk-js-amqp": "^3.0.1",
+		"@cesarbr/knot-cloud-sdk-js-authenticator": "^2.1.2",
+		"@cesarbr/knot-cloud-sdk-js-storage": "^1.0.4",
 		"@rollup/plugin-json": "^4.0.2"
 	}
 }
