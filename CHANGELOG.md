@@ -1,3 +1,11 @@
+# [3.2.1](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v3.2.0...v3.2.1)
+
+## Features
+
+- Add support to [AMQP Client v3.0.1](https://github.com/CESARBR/knot-cloud-sdk-js-amqp/releases/tag/v3.1.0)
+- Add support to [Authenticator v2.1.2](https://github.com/CESARBR/knot-cloud-sdk-js-authenticator/releases/tag/v2.1.2)
+- Add support to [Storage v1.0.4](https://github.com/CESARBR/knot-cloud-sdk-js-storage/releases/tag/v1.0.4)
+
 # [3.2.0](https://github.com/CESARBR/knot-cloud-sdk-js/compare/v3.1.0...v3.2.0)
 
 ## Features
