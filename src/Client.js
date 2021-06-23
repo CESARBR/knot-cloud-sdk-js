@@ -5,7 +5,7 @@ class Client {}
 const clientHandler = {
   construct(target, args) {
     const properties = args[0];
-    if (properties.protocol !== 'amqp' && properties.protocol !== 'amqps') {
+    if (properties.amqp.protocol !== 'amqp' && properties.amqp.protocol !== 'amqps') {
       throw new Error('Unsupported client protocol');
     }
 
