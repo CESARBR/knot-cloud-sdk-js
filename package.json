@@ -48,8 +48,8 @@
 		"lint"
 	],
 	"dependencies": {
-		"@cesarbr/knot-cloud-sdk-js-amqp": "^3.0.1",
-		"@cesarbr/knot-cloud-sdk-js-authenticator": "^2.1.2",
+		"@cesarbr/knot-cloud-sdk-js-amqp": "4.0.0",
+		"@cesarbr/knot-cloud-sdk-js-authenticator": "2.2.0",
 		"@cesarbr/knot-cloud-sdk-js-storage": "^1.0.4",
 		"@rollup/plugin-json": "^4.0.2"
 	}
