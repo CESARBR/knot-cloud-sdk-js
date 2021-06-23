@@ -869,21 +869,22 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cesarbr/knot-cloud-sdk-js-amqp@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@cesarbr/knot-cloud-sdk-js-amqp/-/knot-cloud-sdk-js-amqp-3.0.1.tgz#46599946cad02620b422ca12284386967473119a"
-  integrity sha512-QbIVjn52fnLF+OldU7jH0VKsLEXKQOBpFn/Z+HhyRse5gbxx6mcAnXx2bZAPDSnvl9wAVRAMiwyha4ldYZY9hA==
+"@cesarbr/knot-cloud-sdk-js-amqp@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@cesarbr/knot-cloud-sdk-js-amqp/-/knot-cloud-sdk-js-amqp-4.0.0.tgz#c5e8899507a8580af628b49d34a2e8ac83bd22fe"
+  integrity sha512-glHQJowkiaavFqON20N7htiU5kdum7d+Sr25CpMi4iJTmkyNHHsuQyIK1He+Km2C4M8q8HF6NxWDe0aoNFI0TQ==
   dependencies:
+    "@cesarbr/knot-cloud-sdk-js-authenticator" "^2.2.0"
     amqp-connection-manager "^3.2.0"
-    amqplib "^0.5.5"
+    amqplib "^0.8.0"
     uniqid "^5.2.0"
 
-"@cesarbr/knot-cloud-sdk-js-authenticator@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@cesarbr/knot-cloud-sdk-js-authenticator/-/knot-cloud-sdk-js-authenticator-2.1.2.tgz#50f3cdabbcc5b6964bed8e57a603b7b85db5e693"
-  integrity sha512-7r2mEsR+8Q57Q9jKtKqtyLISIDJVk1SBmYGwv3X2Lk4PO78/ImYumvEDI+bHFF3dSmo4Dr4kCpJAuUpmnaDS7Q==
+"@cesarbr/knot-cloud-sdk-js-authenticator@2.2.0", "@cesarbr/knot-cloud-sdk-js-authenticator@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@cesarbr/knot-cloud-sdk-js-authenticator/-/knot-cloud-sdk-js-authenticator-2.2.0.tgz#857ea8862703c71a3eb1009a4c8367f734dabade"
+  integrity sha512-Q2FAJRs7u4bT4mEy+O7LP+xVLNSeFNrVjedtQlZAkMndUC6WZFVMv66WjP/KgUgOABPbLkOBQGECqJ1ss1fr4w==
   dependencies:
-    axios "^0.19.0"
+    axios "^0.21.1"
 
 "@cesarbr/knot-cloud-sdk-js-storage@^1.0.4":
   version "1.0.4"
@@ -975,17 +976,17 @@ amqp-connection-manager@^3.2.0:
   dependencies:
     promise-breaker "^5.0.0"
 
-amqplib@^0.5.5:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/amqplib/-/amqplib-0.5.6.tgz#86a7850f4f39c568eaa0dd0300ef374e17941cf4"
-  integrity sha512-J4TR0WAMPBHN+tgTuhNsSObfM9eTVTZm/FNw0LyaGfbiLsBxqSameDNYpChUFXW4bnTKHDXy0ab+nuLhumnRrQ==
+amqplib@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/amqplib/-/amqplib-0.8.0.tgz#088d10bc61cc5ac5a49ac72033c7ac66c23aeb61"
+  integrity sha512-icU+a4kkq4Y1PS4NNi+YPDMwdlbFcZ1EZTQT2nigW3fvOb6AOgUQ9+Mk4ue0Zu5cBg/XpDzB40oH10ysrk2dmA==
   dependencies:
     bitsyntax "~0.1.0"
-    bluebird "^3.5.2"
+    bluebird "^3.7.2"
     buffer-more-ints "~1.0.0"
     readable-stream "1.x >=1.1.9"
-    safe-buffer "~5.1.2"
-    url-parse "~1.4.3"
+    safe-buffer "~5.2.1"
+    url-parse "~1.5.1"
 
 ansi-escapes@^4.2.1:
   version "4.3.1"
@@ -1100,13 +1101,6 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-axios@^0.19.0:
-  version "0.19.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
-  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
-  dependencies:
-    follow-redirects "1.5.10"
-
 axios@^0.21.1:
   version "0.21.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
@@ -1178,7 +1172,7 @@ bl@~0.8.1:
   dependencies:
     readable-stream "~1.0.26"
 
-bluebird@^3.5.2:
+bluebird@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -1597,13 +1591,6 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
     randomfill "^1.0.3"
-
-debug@=3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
-  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
-  dependencies:
-    ms "2.0.0"
 
 debug@^2.2.0, debug@^2.3.3, debug@^2.6.9, debug@~2.6.9:
   version "2.6.9"
@@ -2113,13 +2100,6 @@ flatted@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha512-r5wGx7YeOwNWNlCA0wQ86zKyDLMQr+/RB8xy74M4hTphfmjlijTSSXGuH8rnvKZnfT9i+75zmd8jcKdMR4O6jA==
-
-follow-redirects@1.5.10:
-  version "1.5.10"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
-  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
-  dependencies:
-    debug "=3.1.0"
 
 follow-redirects@^1.10.0:
   version "1.13.1"
@@ -3762,7 +3742,7 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, 
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
 
-safe-buffer@^5.2.0, safe-buffer@~5.2.0:
+safe-buffer@^5.2.0, safe-buffer@~5.2.0, safe-buffer@~5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
@@ -4234,10 +4214,10 @@ urix@^0.1.0:
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
-url-parse@~1.4.3:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.4.7.tgz#a8a83535e8c00a316e403a5db4ac1b9b853ae278"
-  integrity sha512-d3uaVyzDB9tQoSXFvuSUNFibTd9zxd2bkVrDRvF5TmvWWQwqE4lgYJ5m+x1DbecWkw+LK4RNl2CU1hHuOKPVlg==
+url-parse@~1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/url-parse/-/url-parse-1.5.1.tgz#d5fa9890af8a5e1f274a2c98376510f6425f6e3b"
+  integrity sha512-HOfCOUJt7iSYzEx/UqgtwKRMC6EU91NFhsCHMv9oM03VJcVo2Qrp8T8kI9D7amFf1cu+/3CEhgb3rF9zL7k85Q==
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
